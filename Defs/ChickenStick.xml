@@ -12,6 +12,8 @@
         <costList>
             <WoodLog>30</WoodLog>
         </costList>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
         <statBases>
             <WorkToMake>7000</WorkToMake>
             <Mass>0.8</Mass>

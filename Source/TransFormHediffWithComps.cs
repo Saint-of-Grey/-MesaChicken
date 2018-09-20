@@ -32,7 +32,7 @@ namespace TragicTheCluckering
 
         private void TransformPawn(ThingDef @into, PawnKindDef intoKind)
         {
-            Log.Error("Performing Transform on " + pawn + " to a " + into);
+            Log.Message("Performing Transform on " + pawn + " to a " + into + "with a kind of "+ intoKind);
             if (into == null || into == pawn.def) return;
 
             var map = pawn.Map;

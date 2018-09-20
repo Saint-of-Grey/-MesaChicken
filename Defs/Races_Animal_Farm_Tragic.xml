@@ -135,8 +135,7 @@
         <defName>ChickenTragic</defName>
         <label>tragic chicken</label>
         <description>A human, wait.. I mean the most traditional farm bird, the chicken is raised for its eggs and meat.
-            It grows very quickly and lays eggs very often.
-        </description>
+            It grows very quickly and lays eggs very often, or is it a human, yuck.</description>
         <statBases>
             <MoveSpeed>2.1</MoveSpeed>
             <MarketValue>50</MarketValue>
@@ -298,52 +297,6 @@
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
                     <drawSize>0.85</drawSize>
-                </femaleDessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-                    <drawSize>0.97</drawSize>
-                    <color>(200,150,85)</color>
-                    <shadowData>
-                        <volume>(0.3, 0.4, 0.3)</volume>
-                        <offset>(0,0,-0.05)</offset>
-                    </shadowData>
-                </bodyGraphicData>
-                <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-                    <drawSize>0.95</drawSize>
-                </femaleGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-                    <drawSize>0.97</drawSize>
-                </dessicatedBodyGraphicData>
-                <femaleDessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-                    <drawSize>0.95</drawSize>
-                </femaleDessicatedBodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-                    <drawSize>1.87</drawSize>
-                    <color>(200,150,85)</color>
-                    <shadowData>
-                        <volume>(0.3, 0.4, 0.3)</volume>
-                        <offset>(0,0,-0.05)</offset>
-                    </shadowData>
-                </bodyGraphicData>
-                <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Chicken</texPath>
-                    <drawSize>1.45</drawSize>
-                </femaleGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-                    <drawSize>1.87</drawSize>
-                </dessicatedBodyGraphicData>
-                <femaleDessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-                    <drawSize>1.45</drawSize>
                 </femaleDessicatedBodyGraphicData>
             </li>
         </lifeStages>
