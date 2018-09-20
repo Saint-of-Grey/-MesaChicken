@@ -47,6 +47,8 @@ namespace TragicTheCluckering
             //save the pawn
             pawn.ExposeData();
 
+            //magic to make image change 
+            pawn.ageTracker.AgeBiologicalTicks = pawn.ageTracker.AgeBiologicalTicks - 1;
             //pawn.SpawnSetup(map, true);
         }
 
