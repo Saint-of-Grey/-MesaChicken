@@ -2,17 +2,146 @@
 <Defs>
 
 
-    <ThingDef ParentName="BasePawn">
+    <!--<ThingDef ParentName="BasePawn">-->
+    <!--<defName>ChickenTragic</defName>-->
+    <!--<label>tragic chicken</label>-->
+    <!--<description>A baseline human, trapped in the body of a wee bird.</description>-->
+    <!--<statBases>-->
+    <!--<MarketValue>150</MarketValue>-->
+    <!--<MoveSpeed>2.1</MoveSpeed>-->
+    <!--<Flammability>1.0</Flammability>-->
+    <!--<ComfyTemperatureMin>-10</ComfyTemperatureMin>-->
+    <!--<ComfyTemperatureMax>36</ComfyTemperatureMax>-->
+    <!--<LeatherAmount>0</LeatherAmount>-->
+    <!--</statBases>-->
+    <!--<tools>-->
+    <!--<li>-->
+    <!--<label>claws</label>-->
+    <!--<capacities>-->
+    <!--<li>Scratch</li>-->
+    <!--</capacities>-->
+    <!--<power>2</power>-->
+    <!--<cooldownTime>1.5</cooldownTime>-->
+    <!--<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<label>beak</label>-->
+    <!--<capacities>-->
+    <!--<li>Bite</li>-->
+    <!--</capacities>-->
+    <!--<power>3</power>-->
+    <!--<cooldownTime>2</cooldownTime>-->
+    <!--<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<label>head</label>-->
+    <!--<capacities>-->
+    <!--<li>Blunt</li>-->
+    <!--</capacities>-->
+    <!--<power>1</power>-->
+    <!--<cooldownTime>1.5</cooldownTime>-->
+    <!--<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>-->
+    <!--<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>-->
+    <!--<chanceFactor>0.2</chanceFactor>-->
+    <!--</li>-->
+    <!--</tools>-->
+    <!--<race>-->
+    <!--<thinkTreeMain>Humanlike</thinkTreeMain>-->
+    <!--<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>-->
+    <!--<intelligence>Humanlike</intelligence>-->
+    <!--<makesFootprints>true</makesFootprints>-->
+    <!--<lifeExpectancy>80</lifeExpectancy>-->
+    <!--<leatherDef>Leather_Human</leatherDef>-->
+    <!--<nameCategory>HumanStandard</nameCategory>-->
+    <!--<body>Bird</body>-->
+    <!--<baseBodySize>1</baseBodySize>-->
+    <!--<baseHealthScale>1</baseHealthScale>-->
+    <!--<foodType>OmnivoreRoughAnimal</foodType>-->
+    <!--<gestationPeriodDays>5</gestationPeriodDays>-->
+    <!--<meatMarketValue>0.8</meatMarketValue>-->
+    <!--<manhunterOnDamageChance>0</manhunterOnDamageChance>-->
+    <!--<manhunterOnTameFailChance>0</manhunterOnTameFailChance>-->
+    <!--<litterSizeCurve>-->
+    <!--<points>-->
+    <!--<li>(0.5, 0)</li>-->
+    <!--<li>(1, 1)</li>-->
+    <!--<li>(1.01, 0.02)</li>-->
+    <!--<li>(12.5, 0)</li>-->
+    <!--</points>-->
+    <!--</litterSizeCurve>-->
+    <!--<lifeStageAges>-->
+    <!--<li>-->
+    <!--<def>HumanlikeBaby</def>-->
+    <!--<minAge>0</minAge>-->
+    <!--<soundWounded>Pawn_Chick_Call</soundWounded>-->
+    <!--<soundDeath>Pawn_Chick_Call</soundDeath>-->
+    <!--<soundCall>Pawn_Chick_Call</soundCall>-->
+    <!--<soundAngry>Pawn_Chick_Call</soundAngry>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<def>HumanlikeToddler</def>-->
+    <!--<minAge>1.2</minAge>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<def>HumanlikeChild</def>-->
+    <!--<minAge>4</minAge>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<def>HumanlikeTeenager</def>-->
+    <!--<minAge>13</minAge>-->
+    <!--<soundWounded>Pawn_Chicken_Wounded</soundWounded>-->
+    <!--<soundDeath>Pawn_Chicken_Death</soundDeath>-->
+    <!--<soundCall>Pawn_Chicken_Call</soundCall>-->
+    <!--<soundAngry>Pawn_Chicken_Angry</soundAngry>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<def>HumanlikeAdult</def>-->
+    <!--<minAge>18</minAge>-->
+    <!--</li>-->
+    <!--</lifeStageAges>-->
+    <!--<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>-->
+    <!--<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>-->
+    <!--<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>-->
+    <!--<specialShadowData>-->
+    <!--<volume>(0.3, 0.8, 0.4)</volume>-->
+    <!--<offset>(0,0,-0.3)</offset>-->
+    <!--</specialShadowData>-->
+    <!--<ageGenerationCurve>-->
+    <!--<points>-->
+    <!--<li>(14,0)</li>-->
+    <!--<li>(16,100)</li>-->
+    <!--<li>(50,100)</li>-->
+    <!--<li>(60,30)</li>-->
+    <!--<li>(70,18)</li>-->
+    <!--<li>(80,10)</li>-->
+    <!--<li>(90,3)</li>-->
+    <!--<li>(100,0)</li>-->
+    <!--</points>-->
+    <!--</ageGenerationCurve>-->
+    <!--<hediffGiverSets>-->
+    <!--<li>OrganicStandard</li>-->
+    <!--<li>Human</li>-->
+    <!--</hediffGiverSets>-->
+    <!--</race>-->
+    <!--<recipes>-->
+    <!--<li>ExciseCarcinoma</li>-->
+    <!--<li>RemoveBodyPart</li>-->
+    <!--<li>Euthanize</li>-->
+    <!--<li>Anesthetize</li>-->
+    <!--</recipes>-->
+    <!--</ThingDef>-->
+
+    <ThingDef ParentName="AnimalThingBase">
         <defName>ChickenTragic</defName>
         <label>tragic chicken</label>
-        <description>A baseline human, trapped in the body of a wee bird.</description>
+        <description>A human, wait.. I mean the most traditional farm bird, the chicken is raised for its eggs and meat.
+            It grows very quickly and lays eggs very often.
+        </description>
         <statBases>
-            <MarketValue>150</MarketValue>
             <MoveSpeed>2.1</MoveSpeed>
-            <Flammability>1.0</Flammability>
-            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-            <ComfyTemperatureMax>36</ComfyTemperatureMax>
+            <MarketValue>50</MarketValue>
             <LeatherAmount>0</LeatherAmount>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
         </statBases>
         <tools>
             <li>
@@ -31,7 +160,7 @@
                 </capacities>
                 <power>3</power>
                 <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>head</label>
@@ -45,33 +174,34 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>EggChickenUnfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>EggChickenFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>2</eggLayIntervalDays>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
         <race>
+            <body>Bird</body>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-            <intelligence>Humanlike</intelligence>
-            <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>80</lifeExpectancy>
-            <leatherDef>Leather_Human</leatherDef>
+          
             <nameCategory>HumanStandard</nameCategory>
-            <body>Bird</body>
-            <baseBodySize>1</baseBodySize>
-            <baseHealthScale>1</baseHealthScale>
+            <baseHungerRate>0.35</baseHungerRate>
+            <baseBodySize>0.18</baseBodySize>
+            <baseHealthScale>0.55</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
-            <gestationPeriodDays>5</gestationPeriodDays>
-            <meatMarketValue>0.8</meatMarketValue>
-            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <trainability>None</trainability>
+            <wildness>0</wildness>
             <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-            <litterSizeCurve>
-                <points>
-                    <li>(0.5, 0)</li>
-                    <li>(1, 1)</li>
-                    <li>(1.01, 0.02)</li>
-                    <li>(12.5, 0)</li>
-                </points>
-            </litterSizeCurve>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <mateMtbHours>8</mateMtbHours>
+            <lifeExpectancy>6</lifeExpectancy>
             <lifeStageAges>
                 <li>
-                    <def>HumanlikeBaby</def>
+                    <def>AnimalBabyTiny</def>
                     <minAge>0</minAge>
                     <soundWounded>Pawn_Chick_Call</soundWounded>
                     <soundDeath>Pawn_Chick_Call</soundDeath>
@@ -79,156 +209,28 @@
                     <soundAngry>Pawn_Chick_Call</soundAngry>
                 </li>
                 <li>
-                    <def>HumanlikeToddler</def>
-                    <minAge>1.2</minAge>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
                 </li>
                 <li>
-                    <def>HumanlikeChild</def>
-                    <minAge>4</minAge>
-                </li>
-                <li>
-                    <def>HumanlikeTeenager</def>
-                    <minAge>13</minAge>
+                    <def>AnimalAdult</def>
+                    <minAge>2</minAge>
                     <soundWounded>Pawn_Chicken_Wounded</soundWounded>
                     <soundDeath>Pawn_Chicken_Death</soundDeath>
                     <soundCall>Pawn_Chicken_Call</soundCall>
                     <soundAngry>Pawn_Chicken_Angry</soundAngry>
                 </li>
-                <li>
-                    <def>HumanlikeAdult</def>
-                    <minAge>18</minAge>
-                </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-            <specialShadowData>
-                <volume>(0.3, 0.8, 0.4)</volume>
-                <offset>(0,0,-0.3)</offset>
-            </specialShadowData>
-            <ageGenerationCurve>
-                <points>
-                    <li>(14,0)</li>
-                    <li>(16,100)</li>
-                    <li>(50,100)</li>
-                    <li>(60,30)</li>
-                    <li>(70,18)</li>
-                    <li>(80,10)</li>
-                    <li>(90,3)</li>
-                    <li>(100,0)</li>
-                </points>
-            </ageGenerationCurve>
-            <hediffGiverSets>
-                <li>OrganicStandard</li>
-                <li>Human</li>
-            </hediffGiverSets>
         </race>
-        <recipes>
-            <li>ExciseCarcinoma</li>
-            <li>RemoveBodyPart</li>
-            <li>Euthanize</li>
-            <li>Anesthetize</li>
-        </recipes>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
     </ThingDef>
-    <!--
-    <ThingDef ParentName="AnimalThingBase">
-      <defName>ChickenTragic</defName>
-      <label>tragic chicken</label>
-      <description>A human, wait.. I mean the most traditional farm bird, the chicken is raised for its eggs and meat. It grows very quickly and lays eggs very often.</description>
-      <statBases>
-        <MoveSpeed>2.1</MoveSpeed>
-        <MarketValue>50</MarketValue>
-        <LeatherAmount>0</LeatherAmount>
-        <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      </statBases>
-      <tools>
-        <li>
-          <label>claws</label>
-          <capacities>
-            <li>Scratch</li>
-          </capacities>
-          <power>2</power>
-          <cooldownTime>1.5</cooldownTime>
-          <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-        </li>
-        <li>
-          <label>beak</label>
-          <capacities>
-            <li>Bite</li>
-          </capacities>
-          <power>3</power>
-          <cooldownTime>2</cooldownTime>
-          <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-        </li>
-        <li>
-          <label>head</label>
-          <capacities>
-            <li>Blunt</li>
-          </capacities>
-          <power>1</power>
-          <cooldownTime>1.5</cooldownTime>
-          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-          <chanceFactor>0.2</chanceFactor>
-        </li>
-      </tools>
-      <comps>
-        <li Class="CompProperties_EggLayer">
-          <eggUnfertilizedDef>EggChickenUnfertilized</eggUnfertilizedDef>
-          <eggFertilizedDef>EggChickenFertilized</eggFertilizedDef>
-          <eggFertilizationCountMax>1</eggFertilizationCountMax>
-          <eggLayIntervalDays>2</eggLayIntervalDays>
-          <eggCountRange>1</eggCountRange>
-        </li>
-      </comps>
-      <race>
-        <body>Bird</body>
-        <thinkTreeMain>Humanlike</thinkTreeMain>
-          <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-          <intelligence>Humanlike</intelligence>
-          
-          <nameCategory>HumanStandard</nameCategory>
-        <baseHungerRate>0.35</baseHungerRate>
-        <baseBodySize>0.18</baseBodySize>
-        <baseHealthScale>0.55</baseHealthScale>
-        <foodType>OmnivoreRoughAnimal</foodType>
-        <trainability>None</trainability>
-        <wildness>0</wildness>
-        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-        <manhunterOnDamageChance>0</manhunterOnDamageChance>
-        <mateMtbHours>8</mateMtbHours>
-        <lifeExpectancy>6</lifeExpectancy>
-        <lifeStageAges>
-          <li>
-            <def>AnimalBabyTiny</def>
-            <minAge>0</minAge>
-              <soundWounded>Pawn_Chick_Call</soundWounded>
-              <soundDeath>Pawn_Chick_Call</soundDeath>
-              <soundCall>Pawn_Chick_Call</soundCall>
-              <soundAngry>Pawn_Chick_Call</soundAngry>
-          </li>
-          <li>
-            <def>AnimalJuvenile</def>
-            <minAge>0.12</minAge>
-          </li>
-          <li>
-            <def>AnimalAdult</def>
-            <minAge>0.3</minAge>
-            <soundWounded>Pawn_Chicken_Wounded</soundWounded>
-            <soundDeath>Pawn_Chicken_Death</soundDeath>
-            <soundCall>Pawn_Chicken_Call</soundCall>
-            <soundAngry>Pawn_Chicken_Angry</soundAngry>
-          </li>
-        </lifeStageAges>
-        <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-        <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-        <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-      </race>
-      <tradeTags>
-        <li>AnimalCommon</li>
-        <li>AnimalFarm</li>
-      </tradeTags>
-    </ThingDef>-->
+
     <PawnKindDef ParentName="AnimalKindBase">
         <defName>ChickenTragic</defName>
         <label>tragic chicken</label>
@@ -327,7 +329,7 @@
                     <drawSize>1.87</drawSize>
                     <color>(200,150,85)</color>
                     <shadowData>
-                        <volume>(0.3, 0.4, 0.3)</volume>d
+                        <volume>(0.3, 0.4, 0.3)</volume>
                         <offset>(0,0,-0.05)</offset>
                     </shadowData>
                 </bodyGraphicData>
