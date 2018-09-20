@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseWeaponNeolithic">
+        <defName>Magic_Drum_Stick</defName>
+        <label>The Drum Stick</label>
+        <description>A simple short staff made from a single piece of wood inscribed with the words, "Lo lord of layers proudly comb-crested Hero to hens father to feathers Crowing sun-caller weaver of wattle Elder to eggs."</description>
+        <graphicData>
+            <texPath>Things/Projectile/Arrow_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_BeatFire</soundInteract>
+        <costList>
+            <WoodLog>30</WoodLog>
+        </costList>
+        <statBases>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.8</Mass>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>1</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>NeolithicRangedBasic</li>
+        </weaponTags>
+        <recipeMaker>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Tragic_Arrow</defaultProjectile>
+                <warmupTime>1.35</warmupTime>
+                <range>22.9</range>
+                <soundCast>Bow_Small</soundCast>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>limb</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>Tragic_Arrow</defName>
+        <label>magic arrow</label>
+        <graphicData>
+            <texPath>Things/Projectile/Arrow_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Tragic_Arrow_DMG</damageDef>
+            <damageAmountBase>1</damageAmountBase>
+            <speed>44</speed>
+        </projectile>
+    </ThingDef>
+
+
+    <DamageDef>
+        <defName>Tragic_Arrow_DMG</defName>
+        <label>tragic magic bolt</label>
+        <workerClass>DamageWorker_AddGlobal</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been killed by tragic magic.</deathMessage>
+        <hediff>TragicSpellEffectChicken</hediff>
+        <hediffSolid>TragicSpellEffectChicken</hediffSolid>
+        <hediffSkin>TragicSpellEffectChicken</hediffSkin>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <armorCategory>Sharp</armorCategory>
+    </DamageDef>
+
+
+    <HediffDef>
+        <defName>TragicSpellEffectChicken</defName>
+        <hediffClass>TragicTheCluckering.TransFormHediffWithComps</hediffClass>
+        <label>Tragic Spell Effect (Wee Chick)</label>
+        <defaultLabelColor>(0.1,0.1,0.75)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+    </HediffDef>
+</Defs>
